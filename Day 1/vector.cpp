@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -39,6 +40,20 @@ int main()
     swap(v, v2);
 
     for (auto element : v)
+    {
+        cout << element << " ";
+    }
+
+    vector<int> v3;
+    v3.push_back(5);
+    v3.push_back(6);
+    v3.push_back(1);
+    v3.push_back(0);
+    v3.push_back(8);
+
+    sort(v3.begin(), v3.end());
+
+    for (auto element : v3)
     {
         cout << element << " ";
     }
